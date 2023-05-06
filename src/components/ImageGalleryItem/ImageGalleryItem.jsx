@@ -37,3 +37,9 @@ export class ImageGalleryItem extends React.Component {
     );
   }
 }
+
+ImageGalleryItem.propTypes = {
+  webformatURL: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
+  largeImageURL: PropTypes.string.isRequired,
+};
