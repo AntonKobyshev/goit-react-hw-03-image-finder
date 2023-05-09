@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from 'react-toastify';
@@ -8,7 +8,7 @@ import { ImageGallery } from './ImageGallery/ImageGallery';
 import { Button } from './Button/Button';
 import { Loader } from './Loader/Loader';
 
-export class App extends React.Component {
+export class App extends Component {
   state = {
     query: '',
     images: [],

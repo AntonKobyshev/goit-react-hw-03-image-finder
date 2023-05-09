@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { createPortal } from 'react-dom';
 import PropTypes from 'prop-types';
 import { Overlay, ModalViewer, ModalImg } from './Modal.styled';
 
 const modalRoot = document.querySelector('#modal-root');
 
-export class Modal extends React.Component {
+export class Modal extends Component {
   componentDidMount() {
     window.addEventListener('keydown', this.closeByEsc);
   }
@@ -15,9 +15,7 @@ export class Modal extends React.Component {
   }
 
   closeByEsc = e => {
-    if (e.code !== 'Escape') {
-      return;
-    }
+    if (e.code !== 'Escape') 
     this.props.closeModal();
   };
 
