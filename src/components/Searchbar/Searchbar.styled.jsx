@@ -58,16 +58,17 @@ align-items: center;
 
   transition: all 300ms ease-in-out;
 
-  :hover {
+   :hover
+   {
     color: var(--bg);
     background-color: var(--accent);
   }
 
-  :focus {
-    color: var(--bg);
-    background-color: var(--accent);
-    outline: 3px solid var(--bg);
-    box-shadow: 0px 0px 0px 6px var(--accent);
-  }
+  // :focus {
+  //   color: var(--bg);
+  //   background-color: var(--accent);
+  //   outline: 3px solid var(--bg);
+  //   box-shadow: 0px 0px 0px 6px var(--accent);
+  // }
 
 `;
