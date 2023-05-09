@@ -54,6 +54,7 @@ align-items: center;
 
   cursor: pointer;
   box-shadow: var(--main-shadow);
+  
 
   transition: all 300ms ease-in-out;
 
@@ -68,4 +69,5 @@ align-items: center;
     outline: 3px solid var(--bg);
     box-shadow: 0px 0px 0px 6px var(--accent);
   }
+
 `;

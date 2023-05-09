@@ -15,15 +15,21 @@ export class Modal extends Component {
   }
 
   closeByEsc = e => {
-    if (e.code !== 'Escape') 
+    if (e.code === 'Escape') 
     this.props.closeModal();
   };
 
+  closeByBackdropClick = e => {
+    if (e.target === e.currentTarget) {
+      this.props.closeModal();
+    }
+  };
+
   render() {
-    const { closeModal, tags, modalImg } = this.props;
+    const { tags, modalImg } = this.props;
 
     return createPortal(
-      <Overlay onClick={closeModal}>
+      <Overlay onClick={this.closeByBackdropClick}>
         <ModalViewer>
           <ModalImg src={modalImg} alt={tags} />
         </ModalViewer>

@@ -18,14 +18,19 @@ export class Searchbar extends React.Component {
     e.preventDefault();
 
     const { query } = this.state;
-    const { onSubmit } = this.props;
+    const { prevQuery, onSubmit } = this.props;
 
     if (query.trim() === '') {
-      toast.error('Please enter search data');
-      return;
+      return toast.error('Please enter search data');
+    }
+    if (prevQuery.toLowerCase() === query.toLowerCase()) {
+      return toast.error('Please enter a new search query');
     }
 
     onSubmit(query);
+    // this.setState({ query: '' });
+
+    
   };
 
   render() {

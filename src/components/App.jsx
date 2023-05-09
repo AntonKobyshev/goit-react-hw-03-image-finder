@@ -62,7 +62,7 @@ export class App extends Component {
 
     return (
       <>
-        <Searchbar onSubmit={handleQuerySubmit} />
+        <Searchbar onSubmit={handleQuerySubmit} prevQuery={this.state.query} />
         {images && <ImageGallery images={images} />}
         {!!totalHits && <Button onLoadMoreClick={handleLoadMore} />}
         {isLoading && <Loader />}
