@@ -9,7 +9,7 @@ const searchParams = new URLSearchParams({
   per_page: ITEMS_PER_PAGE,
   image_type: 'photo',
   orientation: 'horizontal',
-  });
+});
 
 axios.defaults.baseURL = BASE_URL;
 

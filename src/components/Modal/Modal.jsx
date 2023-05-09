@@ -15,8 +15,7 @@ export class Modal extends Component {
   }
 
   closeByEsc = e => {
-    if (e.code === 'Escape') 
-    this.props.closeModal();
+    if (e.code === 'Escape') this.props.closeModal();
   };
 
   closeByBackdropClick = e => {

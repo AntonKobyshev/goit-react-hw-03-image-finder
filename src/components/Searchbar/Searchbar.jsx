@@ -6,7 +6,7 @@ import { HiMagnifyingGlass } from 'react-icons/hi2';
 
 export class Searchbar extends React.Component {
   state = {
-    query: '',    
+    query: '',
     page: 1,
   };
 
@@ -29,8 +29,6 @@ export class Searchbar extends React.Component {
 
     onSubmit(query);
     // this.setState({ query: '' });
-
-    
   };
 
   render() {

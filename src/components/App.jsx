@@ -17,7 +17,7 @@ export class App extends Component {
     isLoading: false,
   };
 
-  async componentDidUpdate( _ , prevState) {
+  async componentDidUpdate(_, prevState) {
     const { query, page } = this.state;
 
     if (prevState.query !== query || prevState.page !== page) {
@@ -64,7 +64,9 @@ export class App extends Component {
       <>
         <Searchbar onSubmit={handleQuerySubmit} prevQuery={this.state.query} />
         {images && <ImageGallery images={images} />}
-        {!isLoading && !!totalHits && <Button onLoadMoreClick={handleLoadMore} />}
+        {!isLoading && !!totalHits && (
+          <Button onLoadMoreClick={handleLoadMore} />
+        )}
         {isLoading && <Loader />}
         <ToastContainer autoClose={2500} />
       </>

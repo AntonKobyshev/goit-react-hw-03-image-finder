@@ -38,11 +38,11 @@ export const Input = styled.input`
 `;
 
 export const ButtonSubmit = styled.button`
-display: flex;
-gap: 10px;
-align-items: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 
-  padding: 10px 10px;
+  padding: 10px;
 
   font-weight: 500;
   font-size: 18px;
@@ -54,12 +54,10 @@ align-items: center;
 
   cursor: pointer;
   box-shadow: var(--main-shadow);
-  
 
   transition: all 300ms ease-in-out;
 
-   :hover
-   {
+  :hover {
     color: var(--bg);
     background-color: var(--accent);
   }
@@ -70,5 +68,4 @@ align-items: center;
   //   outline: 3px solid var(--bg);
   //   box-shadow: 0px 0px 0px 6px var(--accent);
   // }
-
 `;
