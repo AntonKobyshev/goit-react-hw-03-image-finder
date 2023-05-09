@@ -64,7 +64,7 @@ export class App extends Component {
       <>
         <Searchbar onSubmit={handleQuerySubmit} prevQuery={this.state.query} />
         {images && <ImageGallery images={images} />}
-        {!!totalHits && <Button onLoadMoreClick={handleLoadMore} />}
+        {!isLoading && !!totalHits && <Button onLoadMoreClick={handleLoadMore} />}
         {isLoading && <Loader />}
         <ToastContainer autoClose={2500} />
       </>
