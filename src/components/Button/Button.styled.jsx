@@ -1,10 +1,12 @@
 import styled from '@emotion/styled';
 
 export const ButtonLoadMore = styled.button`
-  display: block;
+  display: flex;
+  gap: 10px;
+  align-items: center;
   margin: 0 auto;
   margin-bottom: 20px;
-  padding: 10px 25px;
+  padding: 10px;
 
   font-weight: 500;
   font-size: 18px;
