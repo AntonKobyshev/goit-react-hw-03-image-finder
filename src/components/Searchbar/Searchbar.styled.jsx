@@ -5,7 +5,7 @@ export const Header = styled.header`
   padding: 20px;
   min-width: 100%;
 
-  background-color: var(--searhbarbg);
+  background-color: var(--searchbarbg);
 
   box-shadow: var(--main-shadow);
 `;
